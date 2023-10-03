@@ -15,12 +15,13 @@
 
     <!-- aqui empieza el navbar -->
 
-<nav class="navbar bg-body-tertiary">
+<nav class="navbar bg-body-tertiary"> <!-- space around me arregla el problemita con el menu-->
   <div class="container-fluid">
       <a class="navbar-brand">   <i class="bi bi-instagram"></i> Instagram</a>
     <form class="d-flex" role="search">
+      
       <!--Empieza el modal-->
-      <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+      <button type="button" class="btn btn-success mx-3" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
         Create a new post
       </button>
       
@@ -48,8 +49,9 @@
           </div>
         </div>
       </div>
+      
       <!--Empieza el boton de menu-->
-      <div class="btn-group">
+      <div class="btn-group me-5" >
         <button type="button" class="btn btn-secondary"><i class="bi bi-gear"></i></button>
         <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
           <span class="visually-hidden">Toggle Dropdown</span>
@@ -66,11 +68,13 @@
   </div>
 </nav>
 
+
 <!--Aqui empiezan las fotish con el menusito-->
+
 <div class="container mt-3">
    <br>
   <!-- Nav tabs -->
-  <ul class="nav nav-tabs" role="tablist">
+  <ul class="nav nav-tabs d-flex justify-content-center" role="tablist">  <!-- esto me lo centra d-flex justify-content-center-->
     <li class="nav-item">
       <a class="nav-link active" data-bs-toggle="tab" href="#grid"><i class="bi bi-grid-3x3"></i></a>
     </li>
@@ -82,29 +86,52 @@
   <!-- Tab panes -->
   <div class="tab-content">
     <div id="grid" class="container tab-pane active"><br>
-    <!--Las fotos del grid-->
-<div class="container text-center">
+   
+      <!--Las fotos del grid-->
+<div class="container">
   <div class="row">
-    <div class="col-4">
-      <img src="https://picsum.photos/id/237/200/300">
+    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 g-1 "> <!--g-1 me pone bien el espacio entre fotos-->
+      <img class="img-fluid" src="https://picsum.photos/1200" alt="random picture"/> <!--camel case escribe como Ron-->
     </div>
-    <div class="col-4">
-      <img src="https://picsum.photos/seed/picsum/200/300">
+    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 g-1">
+      <img class="img-fluid" src="https://picsum.photos/1200" alt="random picture"/> <!--camel case escribe como Ron-->
     </div>
-    <div class="col-4">
-      <img src="https://picsum.photos/200/300?grayscale">
+    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 g-1">
+      <img class="img-fluid" src="https://picsum.photos/1200" alt="random picture"/> <!--camel case escribe como Ron-->
     </div>
+    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 g-1">
+      <img class="img-fluid" src="https://picsum.photos/1200" alt="random picture"/> <!--camel case escribe como Ron-->
+    </div>
+    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 g-1">
+      <img class="img-fluid" src="https://picsum.photos/1200" alt="random picture"/> <!--camel case escribe como Ron-->
+    </div>
+    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 g-1">
+      <img class="img-fluid" src="https://picsum.photos/1200" alt="random picture"/> <!--camel case escribe como Ron-->
+    </div>
+    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 g-1">
+      <img class="img-fluid" src="https://picsum.photos/1200" alt="random picture"/> <!--camel case escribe como Ron-->
+    </div>
+    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 g-1">
+      <img class="img-fluid" src="https://picsum.photos/1200" alt="random picture"/> <!--camel case escribe como Ron-->
+    </div>
+    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 g-1">
+      <img class="img-fluid" src="https://picsum.photos/1200" alt="random picture"/> <!--camel case escribe como Ron-->
+    </div>
+    
   </div>
 </div>
     </div>
     
     <!--las fotos indi-->
     <div id="square" class="container tab-pane fade"><br>
-      <div class="card" style="width: 18rem;">
-        <h5 class="card-title">Card title</h5>
+      <div class="w-50 mx-auto ">
+      <div class="card">
+        <h5 class="card-title">Titulo de mi fotish cute</h5>
         <div class="card-body">
-          <img src="https://picsum.photos/id/237/200/300" class="card-img-top">
+          <img src="https://picsum.photos/1200" class="img-fluid">
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div>
+        
         </div>
       </div>
 
